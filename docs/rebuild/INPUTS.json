@@ -1,0 +1,191 @@
+{
+  "date": "2026-10-16",
+  "set": "darksealj",
+  "parent": "darkseal",
+  "release": "v1.0_20261004",
+  "description": "Dark Seal Korean Translation v1.0|다크씰 한글 패치 v1.0",
+  "files": [
+    {
+      "path": "common/config/deco74_tables.json",
+      "bytes": 25049,
+      "sha256": "86d64770b0d389d7a5c57baea63f30ed186beeeeef21750c435078a4a4506cca"
+    },
+    {
+      "path": "darksealj/workspace/font/mapping/ds1_glyph_map.json",
+      "bytes": 5988,
+      "sha256": "c16e919dc81e07e78256737748be44b5b1db6605ce8e01d4ff18514f180805ee"
+    },
+    {
+      "path": "darksealj/workspace/text/source/ds1_blocks.json",
+      "bytes": 71574,
+      "sha256": "7dddd4a66909b039f3ec1f6de7ddec341ed9215dd3280d7e3aefad35e0cd0542"
+    },
+    {
+      "path": "darksealj/workspace/text/source/ds1_text_ja.json",
+      "bytes": 10557,
+      "sha256": "314f552b990e994efec6982ac76bfedda169cda5b8ab146719d082bf8bd1edf6"
+    },
+    {
+      "path": "darksealj/workspace/text/source/transcriptions.json",
+      "bytes": 1160,
+      "sha256": "ad527a5bc547bd7e045784bde6187b454a13c13fd91a8a5cb45fec9bb959f5ee"
+    },
+    {
+      "path": "darksealj/workspace/text/translation/ds1_translation.json",
+      "bytes": 41246,
+      "sha256": "0d760d5e8d54afe957e0ba361628b283d5483a51cced5caec0b1429d51bcc591"
+    },
+    {
+      "path": "inputs/fonts/Galmuri11_16x16.png",
+      "bytes": 745190,
+      "sha256": "ed69582591ad99e0c351ab0bb0118657e775a6ae1b927c8d82d3d82891ff284c"
+    },
+    {
+      "path": "inputs/fonts/Galmuri7_8x8.png",
+      "bytes": 278547,
+      "sha256": "a2be473e22a62942164c95db60f3f5aa88a99f76b525994d194e9f5f9df387ea"
+    }
+  ],
+  "sets": {
+    "darksealj": [
+      {
+        "name": "fz_01-4.h14",
+        "bytes": 131072,
+        "crc32": "373caeee",
+        "sha256": "910a95847d69a46cdeeee2f2214c92420bbc6524b70f26b27679e6da2db57460"
+      },
+      {
+        "name": "fz_05-2.j14",
+        "bytes": 131072,
+        "crc32": "3374ef8c",
+        "sha256": "58a99208d6b9bcd1d05e3145b5cc9fbf3755c2ec4f99c2116bb1fa867d0e25c4"
+      },
+      {
+        "name": "fz_04-4.j12",
+        "bytes": 131072,
+        "crc32": "817faa2c",
+        "sha256": "4574d8cfbfaf1e49d6bb6406e5418c9fbf874e2660743bbcb2d6f062cfcc479a"
+      },
+      {
+        "name": "fz_00-2.h12",
+        "bytes": 131072,
+        "crc32": "1ab99aa7",
+        "sha256": "3d958b2ab8bc0c54b9779b961e4c23cd45124994cebaf30231adf23b5a735692"
+      }
+    ],
+    "darkseal": [
+      {
+        "name": "mac-03.h3",
+        "bytes": 524288,
+        "crc32": "9996f3dc",
+        "sha256": "a83e1b893ab07ee0e7f387177225d1f40d514f82ab4d889bd0444bc572afc85a"
+      },
+      {
+        "name": "mac-02.e20",
+        "bytes": 524288,
+        "crc32": "49504e89",
+        "sha256": "dc661c83ac81c105e56c54bf117e9dc38d343a370bb4ccfba9ce87aca3fc8303"
+      },
+      {
+        "name": "mac-01.b3",
+        "bytes": 524288,
+        "crc32": "b28f7584",
+        "sha256": "f1aa1afc5274726bbddaa9c8254c6c8e6a6f4afe4ac4adfde28ab993183dee5b"
+      },
+      {
+        "name": "mac-00.b1",
+        "bytes": 524288,
+        "crc32": "52acf1d6",
+        "sha256": "8032de4ac3762ea692a8a4118349dbed6220619af5a25d9a3e52adfd8e9d38b9"
+      },
+      {
+        "name": "ga_05.j14",
+        "bytes": 131072,
+        "crc32": "d5e3ae3f",
+        "sha256": "ea7bd9cbe725157db473b25c7aa8cd0f32270035542fd8af664f9e354f983391"
+      },
+      {
+        "name": "ga_04-3.j12",
+        "bytes": 131072,
+        "crc32": "bafad556",
+        "sha256": "f7883986254376b49489bec05e9fcf748342821828eab1b01c56c36a98721e0d"
+      },
+      {
+        "name": "ga_01-3.h14",
+        "bytes": 131072,
+        "crc32": "f409050e",
+        "sha256": "09f751b9f437f386ce4414450ace2b0fbea187512383ecdc2f5ce9bf96b920b1"
+      },
+      {
+        "name": "ga_00.h12",
+        "bytes": 131072,
+        "crc32": "fbf3ac63",
+        "sha256": "ce175fda625a944f15a97f0ca98a03307578b91fdf8468cab4073cbed422c185"
+      },
+      {
+        "name": "fz_08.l17",
+        "bytes": 131072,
+        "crc32": "c9bf68e1",
+        "sha256": "6798cfeb0f430209167bc23cc5a81562b46f341aa9da85af2b85cc247b5b2537"
+      },
+      {
+        "name": "fz_07.k14",
+        "bytes": 131072,
+        "crc32": "588dd3cb",
+        "sha256": "d83903c3c4c8348e54a6e0064b74e7653ab731f4695d8701074492a5439346c4"
+      },
+      {
+        "name": "fz_06-1.j15",
+        "bytes": 65536,
+        "crc32": "c4828a6d",
+        "sha256": "084c8789b4e4b554c603200e54800b320a2c448488bd2934668f122a8c73c1bb"
+      },
+      {
+        "name": "fz_03.j2",
+        "bytes": 65536,
+        "crc32": "264b90ed",
+        "sha256": "44b05b784f8590be75eb4e124b52984f158827f2ff9ff64d485ac88bf2713d3f"
+      },
+      {
+        "name": "fz_02.j1",
+        "bytes": 65536,
+        "crc32": "3c9c3012",
+        "sha256": "a4be93a04b8559e1f1df56cbc8445eecd3dda2a3901ae005c1b6f89c42942743"
+      }
+    ]
+  },
+  "expectedPatches": [
+    {
+      "name": "Korean-fz_00-2_h12.ips",
+      "bytes": 2487,
+      "sha256": "ef28602380f50e698bc86736591c75ad792c80c9174fe5c4ee75263960363f02"
+    },
+    {
+      "name": "Korean-fz_01-4_h14.ips",
+      "bytes": 56,
+      "sha256": "bb8b91657bfe5791f974553d5db59cdf61a95302b539fe4d4e01928e74c1cab5"
+    },
+    {
+      "name": "Korean-fz_02_j1.ips",
+      "bytes": 12325,
+      "sha256": "d217c375395d03368817e5c64c6ee494c0c82b3095cd095045193aa8d4d1a81d"
+    },
+    {
+      "name": "Korean-fz_03_j2.ips",
+      "bytes": 17292,
+      "sha256": "2a67c62f7e23f2cbbb5395cc07e58082daff3b9250afeba96263285b8541fd56"
+    },
+    {
+      "name": "Korean-fz_04-4_j12.ips",
+      "bytes": 66,
+      "sha256": "af1bd61c17baff556f4af8fb9dcfbbb2200063fa8aaea47be57be2b0c529647e"
+    },
+    {
+      "name": "Korean-fz_05-2_j14.ips",
+      "bytes": 2439,
+      "sha256": "c76b679854b44de36d774b6cfb5d131ab578ecc10280a67dfada5bc737ad3d31"
+    }
+  ],
+  "originalIncluded": false,
+  "zipRepackingAllowed": true
+}

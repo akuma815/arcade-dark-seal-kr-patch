@@ -27,7 +27,7 @@ from patchutil import check_allowed, crc32, ips_build  # noqa: E402
 
 LEDGER = L.GAME / "workspace" / "text" / "translation" / "ds1_translation.json"
 GMAP = L.GAME / "workspace" / "font" / "mapping" / "ds1_glyph_map.json"
-FONT16 = L.ROOT.parent.parent / "Font" / "Galmuri11_16x16.png"
+FONT16 = L.ROOT / "inputs" / "fonts" / "Galmuri11_16x16.png"
 FBNEO_IPS = Path(r"H:\FBNeo v1.0.0.03\support\ips\darksealj")
 STATUS_RANK = {"untranslated": 0, "draft": 1, "needs_review": 2, "approved": 3}
 FALLBACK_BANK = (0xA00, 0x1000)
@@ -240,7 +240,7 @@ def main() -> int:
                     if is_hangul(c) and c not in chars8:
                         chars8.append(c)
         top16 = max(alloc.values(), default=FALLBACK_BANK[0]) + 4          # 16×16 배정이 끝난 다음 타일
-        sheet8 = Image.open(L.ROOT.parent.parent / "Font" / "Galmuri7_8x8.png").convert("RGBA")
+        sheet8 = Image.open(L.ROOT / "inputs" / "fonts" / "Galmuri7_8x8.png").convert("RGBA")
         t = 0xFFF
         for c in chars8:
             if t < top16:

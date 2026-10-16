@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "set": "darksealj",
+  "parent": "darkseal",
+  "publicInputsVerified": 8,
+  "originalMembersVerified": 17,
+  "publishedIPSMatch": 6,
+  "ipsApplyMatchesBuild": [
+    {
+      "rom": "fz_04-4.j12",
+      "patch": "Korean-fz_04-4_j12.ips",
+      "targetSHA256": "941006dc66d0fc1aec5268de564e9ed81fe9c1b82bd07e913fa9b522b8ec3ab5"
+    },
+    {
+      "rom": "fz_01-4.h14",
+      "patch": "Korean-fz_01-4_h14.ips",
+      "targetSHA256": "120eba37a80af61597179845b15710caa11042560f0cbd51264cad4b41626b59"
+    },
+    {
+      "rom": "fz_00-2.h12",
+      "patch": "Korean-fz_00-2_h12.ips",
+      "targetSHA256": "6a89079c11e833d4c80ff48633c3d5c778212d5d2f4e0150b4063dba81a41a27"
+    },
+    {
+      "rom": "fz_05-2.j14",
+      "patch": "Korean-fz_05-2_j14.ips",
+      "targetSHA256": "8fea3bb42e3cd00bb7eb11c57bcc942dbac0f1dfa018cd3091b2658b687125ca"
+    },
+    {
+      "rom": "fz_02.j1",
+      "patch": "Korean-fz_02_j1.ips",
+      "targetSHA256": "45303593e0e10d330ff1342662fe5c3b089151e94837f0b9f36ab3b94bd2c522"
+    },
+    {
+      "rom": "fz_03.j2",
+      "patch": "Korean-fz_03_j2.ips",
+      "targetSHA256": "4f29e2786d9575361492144d340cc76d8aac3d7e16e9dd28122b6e64c85b11a4"
+    }
+  ],
+  "installedToEmulator": false,
+  "runtimeVerification": "not performed",
+  "date": "2026-10-16",
+  "downloadedReleaseZipSHA256": "f33a3774ed31f8092b601eb197232e388d625f5506835cb2f0b2fbd0a2c5d1e1",
+  "downloadedReleaseCRC": "PASS",
+  "downloadedIPSPopulationAndHashes": "PASS",
+  "releaseDATByteMatch": true,
+  "wrongSetsRejected": true,
+  "existingOutputRejected": true
+}
