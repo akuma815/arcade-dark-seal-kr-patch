@@ -1,0 +1,2081 @@
+{
+ "_schema": "ds1_translation v1",
+ "_rules": {
+  "cell": "16×16 글리프 1개 = 1셀. 공백 1자 = 빈 셀 1개(0x0000). 줄 끝 공백은 생략 가능",
+  "ko_rows": "줄 목록. 각 줄의 셀 수(글자+공백) ≤ layout.max_cells 를 기본 상한으로 하되 화면 폭(16셀) 안에서 조정 가능",
+  "status": "untranslated → draft(모델 초벌) → needs_review → approved(사람)"
+ },
+ "entries": [
+  {
+   "id": "A:07ba18",
+   "label": "prologue",
+   "addr": "07ba18",
+   "size_bytes": 500,
+   "source_rows": [
+    "　　か　光　そ　世　暗　地　民　",
+    "　　く　の　の　を　黒　の　の　",
+    "　　て　力　時　邪　の　底　心　",
+    "　　再　と　、　悪　中　の　に　",
+    "　　び　技　宿　な　よ　扉　黒　",
+    "　　、　を　運　る　り　開　き　",
+    "　　世　も　に　闇　出　か　影　",
+    "　　に　て　よ　に　で　れ　満　",
+    "　　光　こ　り　包　た　し　ち　",
+    "　　満　れ　て　ま　る　時　、　",
+    "　　つ　を　集　ん　魔　、　遥　",
+    "　　る　封　い　と　の　其　か　",
+    "　　な　じ　し　す　者　の　な　",
+    "　　り　ん　士　。　共　、　る　",
+    "　　。　。　、　　　、"
+   ],
+   "layout": {
+    "rows": 15,
+    "max_cells": 16,
+    "lead_blank": 2,
+    "vertical_original": true,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "백성의 마음에 검은 그림자",
+    "가득하고, 아득한 땅 밑의",
+    "문이 열리던 때, 그 암흑",
+    "속에서 나온 마의 무리가",
+    "세상을 사악한 어둠으로",
+    "덮으려 하니,",
+    "",
+    "그때, 숙명으로 모인",
+    "용사들이 빛의 힘과 기예로",
+    "이를 봉인하리라.",
+    "그리하여 다시 세상에",
+    "빛이 가득하리라.",
+    "",
+    "(에트루리아 전승에서)"
+   ],
+   "status": "approved",
+   "notes": "가로쓰기·아래→위 크롤로 재배치(PoC-2). 원문 후리가나(うち·さだめ·もののふ)는 생략."
+  },
+  {
+   "id": "A:07bc62",
+   "label": "title_line",
+   "addr": "07bc62",
+   "size_bytes": 40,
+   "source_rows": [
+    "勇者達の伝説が",
+    "　　　　　今始まる‥‥"
+   ],
+   "layout": {
+    "rows": 2,
+    "max_cells": 11,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     7
+    ]
+   },
+   "ko_rows": [
+    "용사들의 전설이",
+    "지금 시작된다‥‥"
+   ],
+   "status": "approved",
+   "notes": "원본 블록 40B 한도라 2행 들여쓰기 생략(원문은 5셀 들여씀)"
+  },
+  {
+   "id": "C:07bc8a",
+   "label": "profile_labels",
+   "addr": "07bc8a",
+   "size_bytes": 118,
+   "source_items": [
+    {
+     "off": "0296",
+     "row": 5,
+     "col": 11,
+     "text": "NAME-"
+    },
+    {
+     "off": "0416",
+     "row": 8,
+     "col": 11,
+     "text": "CLASS-"
+    },
+    {
+     "off": "0516",
+     "row": 10,
+     "col": 11,
+     "text": "SEX-"
+    },
+    {
+     "off": "0616",
+     "row": 12,
+     "col": 11,
+     "text": "ALIGNMENT-"
+    },
+    {
+     "off": "0716",
+     "row": 14,
+     "col": 11,
+     "text": "AGE-"
+    },
+    {
+     "off": "0816",
+     "row": 16,
+     "col": 11,
+     "text": "HEIGHT-"
+    },
+    {
+     "off": "0916",
+     "row": 18,
+     "col": 11,
+     "text": "WEIGHT-"
+    },
+    {
+     "off": "0a16",
+     "row": 20,
+     "col": 11,
+     "text": "HAIR-"
+    },
+    {
+     "off": "0b16",
+     "row": 22,
+     "col": 11,
+     "text": "EYES-"
+    },
+    {
+     "off": "0c16",
+     "row": 24,
+     "col": 11,
+     "text": "BLOODTYPE-"
+    },
+    {
+     "off": "0d16",
+     "row": 26,
+     "col": 11,
+     "text": "STAR-"
+    },
+    {
+     "off": "0e16",
+     "row": 28,
+     "col": 11,
+     "text": "WEAPON-"
+    }
+   ],
+   "layout": {
+    "note": "8×8 타일 문자열(라우틴 C→C2). off 는 0x262000 기준 바이트 오프셋, 열 = off/2 % 64. 화면 폭 32열"
+   },
+   "ko_items": [
+    {
+     "off": "0296",
+     "text": "이름-"
+    },
+    {
+     "off": "0416",
+     "text": "직업-"
+    },
+    {
+     "off": "0516",
+     "text": "성별-"
+    },
+    {
+     "off": "0616",
+     "text": "성향-"
+    },
+    {
+     "off": "0716",
+     "text": "나이-"
+    },
+    {
+     "off": "0816",
+     "text": "키-"
+    },
+    {
+     "off": "0916",
+     "text": "몸무게-"
+    },
+    {
+     "off": "0a16",
+     "text": "머리-"
+    },
+    {
+     "off": "0b16",
+     "text": "눈-"
+    },
+    {
+     "off": "0c16",
+     "text": "혈액형-"
+    },
+    {
+     "off": "0d16",
+     "text": "별자리-"
+    },
+    {
+     "off": "0e16",
+     "text": "무기-"
+    }
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "C:07bd10",
+   "label": "profile_values[0]",
+   "addr": "07bd10",
+   "size_bytes": 126,
+   "source_items": [
+    {
+     "off": "02a0",
+     "row": 5,
+     "col": 16,
+     "text": "CarlF"
+    },
+    {
+     "off": "032a",
+     "row": 6,
+     "col": 21,
+     "text": "Graystone"
+    },
+    {
+     "off": "0422",
+     "row": 8,
+     "col": 17,
+     "text": "Knight"
+    },
+    {
+     "off": "051e",
+     "row": 10,
+     "col": 15,
+     "text": "Male"
+    },
+    {
+     "off": "062a",
+     "row": 12,
+     "col": 21,
+     "text": "Lawful"
+    },
+    {
+     "off": "06b6",
+     "row": 13,
+     "col": 27,
+     "text": "Good"
+    },
+    {
+     "off": "071e",
+     "row": 14,
+     "col": 15,
+     "text": "26"
+    },
+    {
+     "off": "0824",
+     "row": 16,
+     "col": 18,
+     "text": "77in"
+    },
+    {
+     "off": "0924",
+     "row": 18,
+     "col": 18,
+     "text": "195lb"
+    },
+    {
+     "off": "0a20",
+     "row": 20,
+     "col": 16,
+     "text": "Gold"
+    },
+    {
+     "off": "0b20",
+     "row": 22,
+     "col": 16,
+     "text": "Brown"
+    },
+    {
+     "off": "0c2a",
+     "row": 24,
+     "col": 21,
+     "text": "A"
+    },
+    {
+     "off": "0d20",
+     "row": 26,
+     "col": 16,
+     "text": "Aries"
+    },
+    {
+     "off": "0e24",
+     "row": 28,
+     "col": 18,
+     "text": "Morning\u0000Star"
+    }
+   ],
+   "layout": {
+    "note": "8×8 타일 문자열(라우틴 C→C2). off 는 0x262000 기준 바이트 오프셋, 열 = off/2 % 64. 화면 폭 32열"
+   },
+   "ko_items": [
+    {
+     "off": "02a0",
+     "text": "칼 F. 그레이스톤"
+    },
+    {
+     "off": "0422",
+     "text": "기사"
+    },
+    {
+     "off": "051e",
+     "text": "남"
+    },
+    {
+     "off": "062a",
+     "text": "질서 선"
+    },
+    {
+     "off": "071e",
+     "text": "26"
+    },
+    {
+     "off": "0824",
+     "text": "196cm"
+    },
+    {
+     "off": "0924",
+     "text": "88kg"
+    },
+    {
+     "off": "0a20",
+     "text": "금발"
+    },
+    {
+     "off": "0b20",
+     "text": "갈색"
+    },
+    {
+     "off": "0c2a",
+     "text": "A"
+    },
+    {
+     "off": "0d20",
+     "text": "양자리"
+    },
+    {
+     "off": "0e24",
+     "text": "모닝스타"
+    }
+   ],
+   "status": "approved",
+   "notes": "Lawful Good→질서 선. 77in/195lb 환산"
+  },
+  {
+   "id": "C:07bd8e",
+   "label": "profile_values[1]",
+   "addr": "07bd8e",
+   "size_bytes": 134,
+   "source_items": [
+    {
+     "off": "02a0",
+     "row": 5,
+     "col": 16,
+     "text": "FreyaEdirne"
+    },
+    {
+     "off": "0422",
+     "row": 8,
+     "col": 17,
+     "text": "Wizard"
+    },
+    {
+     "off": "051e",
+     "row": 10,
+     "col": 15,
+     "text": "Female"
+    },
+    {
+     "off": "062a",
+     "row": 12,
+     "col": 21,
+     "text": "Neutral"
+    },
+    {
+     "off": "06b6",
+     "row": 13,
+     "col": 27,
+     "text": "Good"
+    },
+    {
+     "off": "071e",
+     "row": 14,
+     "col": 15,
+     "text": "24"
+    },
+    {
+     "off": "0824",
+     "row": 16,
+     "col": 18,
+     "text": "66in"
+    },
+    {
+     "off": "0924",
+     "row": 18,
+     "col": 18,
+     "text": "130lb"
+    },
+    {
+     "off": "0a20",
+     "row": 20,
+     "col": 16,
+     "text": "Dark\u0000Blue"
+    },
+    {
+     "off": "0b20",
+     "row": 22,
+     "col": 16,
+     "text": "Blue"
+    },
+    {
+     "off": "0c2a",
+     "row": 24,
+     "col": 21,
+     "text": "AB"
+    },
+    {
+     "off": "0d20",
+     "row": 26,
+     "col": 16,
+     "text": "Sagittarius"
+    },
+    {
+     "off": "0e24",
+     "row": 28,
+     "col": 18,
+     "text": "Flame\u0000Pillar"
+    }
+   ],
+   "layout": {
+    "note": "8×8 타일 문자열(라우틴 C→C2). off 는 0x262000 기준 바이트 오프셋, 열 = off/2 % 64. 화면 폭 32열"
+   },
+   "ko_items": [
+    {
+     "off": "02a0",
+     "text": "프레야 에디르네"
+    },
+    {
+     "off": "0422",
+     "text": "마법사"
+    },
+    {
+     "off": "051e",
+     "text": "여"
+    },
+    {
+     "off": "062a",
+     "text": "중립 선"
+    },
+    {
+     "off": "071e",
+     "text": "24"
+    },
+    {
+     "off": "0824",
+     "text": "168cm"
+    },
+    {
+     "off": "0924",
+     "text": "59kg"
+    },
+    {
+     "off": "0a20",
+     "text": "짙은 파랑"
+    },
+    {
+     "off": "0b20",
+     "text": "파랑"
+    },
+    {
+     "off": "0c2a",
+     "text": "AB"
+    },
+    {
+     "off": "0d20",
+     "text": "궁수자리"
+    },
+    {
+     "off": "0e24",
+     "text": "화염의 기둥"
+    }
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "C:07be14",
+   "label": "profile_values[2]",
+   "addr": "07be14",
+   "size_bytes": 120,
+   "source_items": [
+    {
+     "off": "02a0",
+     "row": 5,
+     "col": 16,
+     "text": "RigerHawk"
+    },
+    {
+     "off": "0422",
+     "row": 8,
+     "col": 17,
+     "text": "Bard"
+    },
+    {
+     "off": "051e",
+     "row": 10,
+     "col": 15,
+     "text": "Male"
+    },
+    {
+     "off": "062a",
+     "row": 12,
+     "col": 21,
+     "text": "Chaotic"
+    },
+    {
+     "off": "06b6",
+     "row": 13,
+     "col": 27,
+     "text": "Good"
+    },
+    {
+     "off": "071e",
+     "row": 14,
+     "col": 15,
+     "text": "25(?)"
+    },
+    {
+     "off": "0824",
+     "row": 16,
+     "col": 18,
+     "text": "72in"
+    },
+    {
+     "off": "0924",
+     "row": 18,
+     "col": 18,
+     "text": "175lb"
+    },
+    {
+     "off": "0a20",
+     "row": 20,
+     "col": 16,
+     "text": "Green"
+    },
+    {
+     "off": "0b20",
+     "row": 22,
+     "col": 16,
+     "text": "Blue"
+    },
+    {
+     "off": "0c2a",
+     "row": 24,
+     "col": 21,
+     "text": "O"
+    },
+    {
+     "off": "0d20",
+     "row": 26,
+     "col": 16,
+     "text": "Leo"
+    },
+    {
+     "off": "0e24",
+     "row": 28,
+     "col": 18,
+     "text": "Elastic"
+    },
+    {
+     "off": "0eb0",
+     "row": 29,
+     "col": 24,
+     "text": "Spetum"
+    }
+   ],
+   "layout": {
+    "note": "8×8 타일 문자열(라우틴 C→C2). off 는 0x262000 기준 바이트 오프셋, 열 = off/2 % 64. 화면 폭 32열"
+   },
+   "ko_items": [
+    {
+     "off": "02a0",
+     "text": "리거 호크"
+    },
+    {
+     "off": "0422",
+     "text": "음유시인"
+    },
+    {
+     "off": "051e",
+     "text": "남"
+    },
+    {
+     "off": "062a",
+     "text": "혼돈 선"
+    },
+    {
+     "off": "071e",
+     "text": "25(?)"
+    },
+    {
+     "off": "0824",
+     "text": "183cm"
+    },
+    {
+     "off": "0924",
+     "text": "79kg"
+    },
+    {
+     "off": "0a20",
+     "text": "초록"
+    },
+    {
+     "off": "0b20",
+     "text": "파랑"
+    },
+    {
+     "off": "0c2a",
+     "text": "O"
+    },
+    {
+     "off": "0d20",
+     "text": "사자자리"
+    },
+    {
+     "off": "0e24",
+     "text": "신축 스페툼"
+    }
+   ],
+   "status": "approved",
+   "notes": "Elastic Spetum→신축 스페툼(무기명 표기 검토)"
+  },
+  {
+   "id": "C:07be8c",
+   "label": "profile_values[3]",
+   "addr": "07be8c",
+   "size_bytes": 116,
+   "source_items": [
+    {
+     "off": "02a0",
+     "row": 5,
+     "col": 16,
+     "text": "Kirikaze"
+    },
+    {
+     "off": "0422",
+     "row": 8,
+     "col": 17,
+     "text": "Ninja"
+    },
+    {
+     "off": "051e",
+     "row": 10,
+     "col": 15,
+     "text": "Male"
+    },
+    {
+     "off": "062a",
+     "row": 12,
+     "col": 21,
+     "text": "Lawful"
+    },
+    {
+     "off": "06b0",
+     "row": 13,
+     "col": 24,
+     "text": "Neutral"
+    },
+    {
+     "off": "071e",
+     "row": 14,
+     "col": 15,
+     "text": "??"
+    },
+    {
+     "off": "0824",
+     "row": 16,
+     "col": 18,
+     "text": "67in"
+    },
+    {
+     "off": "0924",
+     "row": 18,
+     "col": 18,
+     "text": "135lb"
+    },
+    {
+     "off": "0a20",
+     "row": 20,
+     "col": 16,
+     "text": "Black"
+    },
+    {
+     "off": "0b20",
+     "row": 22,
+     "col": 16,
+     "text": "Black"
+    },
+    {
+     "off": "0c2a",
+     "row": 24,
+     "col": 21,
+     "text": "B"
+    },
+    {
+     "off": "0d20",
+     "row": 26,
+     "col": 16,
+     "text": "Capricorn"
+    },
+    {
+     "off": "0e24",
+     "row": 28,
+     "col": 18,
+     "text": "Shuriken"
+    }
+   ],
+   "layout": {
+    "note": "8×8 타일 문자열(라우틴 C→C2). off 는 0x262000 기준 바이트 오프셋, 열 = off/2 % 64. 화면 폭 32열"
+   },
+   "ko_items": [
+    {
+     "off": "02a0",
+     "text": "키리카제"
+    },
+    {
+     "off": "0422",
+     "text": "닌자"
+    },
+    {
+     "off": "051e",
+     "text": "남"
+    },
+    {
+     "off": "062a",
+     "text": "질서 중립"
+    },
+    {
+     "off": "071e",
+     "text": "??"
+    },
+    {
+     "off": "0824",
+     "text": "170cm"
+    },
+    {
+     "off": "0924",
+     "text": "61kg"
+    },
+    {
+     "off": "0a20",
+     "text": "검정"
+    },
+    {
+     "off": "0b20",
+     "text": "검정"
+    },
+    {
+     "off": "0c2a",
+     "text": "B"
+    },
+    {
+     "off": "0d20",
+     "text": "염소자리"
+    },
+    {
+     "off": "0e24",
+     "text": "수리검"
+    }
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "A:07bf10",
+   "label": "story[0]",
+   "addr": "07bf10",
+   "size_bytes": 126,
+   "source_rows": [
+    "　ここエトルリア王国は、平和に",
+    "",
+    "　満ち溢れていた。　　しかし‥",
+    "",
+    "　人々の心には、邪悪な暗い影が",
+    "",
+    "　広がり始めていた‥。"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 15,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "이곳 에트루리아 왕국은",
+    "평화로 가득했다. 그러나‥",
+    "사람들 마음에 사악한",
+    "어둠의 그림자가 번졌다‥."
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "A:07bf8e",
+   "label": "story[1]",
+   "addr": "07bf8e",
+   "size_bytes": 90,
+   "source_rows": [
+    "",
+    "",
+    "　やがて、魔界の門を開け、邪悪",
+    "",
+    "　な魔物共が、世に溢れていった",
+    "",
+    "　のである‥‥。"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 15,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "이윽고 마계의 문이 열리고",
+    "사악한 마물들이 세상에",
+    "넘쳐흐르기 시작했다‥‥."
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "A:07bfe8",
+   "label": "story[2]",
+   "addr": "07bfe8",
+   "size_bytes": 92,
+   "source_rows": [
+    "　人々は待った‥‥。",
+    "",
+    "　古い伝承にある“光の勇者”が、",
+    "",
+    "　この世に再臨することを‥‥。"
+   ],
+   "layout": {
+    "rows": 5,
+    "max_cells": 16,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "사람들은 기다렸다‥‥.",
+    "전승 속 “빛의 용사”가",
+    "이 세상에 다시",
+    "강림하기를‥‥."
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "A:07c044",
+   "label": "story[3]",
+   "addr": "07c044",
+   "size_bytes": 448,
+   "source_rows": [
+    "　若　　　　　　　　　　　　そ",
+    "　者　　　　　　　　　　　　し",
+    "　が　　　　　　　　　　　　て",
+    "　、　　　　　　　　　　　　宿",
+    "　現　　　　　　　　　　　　命",
+    "　わ　　　　　　　　　　　　に",
+    "　れ　　　　　　　　　　　　導",
+    "　た　　　　　　　　　　　　か",
+    "　の　　　　　　　　　　　　れ",
+    "　で　　　　　　　　　　　　し",
+    "　あ　　　　　　　　　　　　四",
+    "　る　　　　　　　　　　　　人",
+    "　：　　　　　　　　　　　　の",
+    "　。　　　　　　　　　　　　　"
+   ],
+   "layout": {
+    "rows": 14,
+    "max_cells": 15,
+    "lead_blank": 1,
+    "vertical_original": true,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "그리고 숙명에 이끌린",
+    "네 젊은이가",
+    "나타났던 것이다‥."
+   ],
+   "status": "approved",
+   "notes": "원문은 세로 2열. 가로 3줄로 재배치 — 표시 위치는 빌드 후 화면 확인"
+  },
+  {
+   "id": "A:07c224",
+   "label": "briefing[0]",
+   "addr": "07c224",
+   "size_bytes": 134,
+   "source_rows": [
+    "　貴公等に頼みがあるのじゃ。　",
+    "",
+    "　近くの古い塔に住みついている",
+    "",
+    "　飛竜を一刻も早く、退治して　",
+    "",
+    "　もらいたいのじゃ。頼んだぞ‼"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 15,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "그대들에게 부탁이 있네.",
+    "근처 오래된 탑에 눌러앉은",
+    "비룡을 한시라도 빨리",
+    "퇴치해 주게. 부탁하네‼"
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "A:07c2aa",
+   "label": "briefing[1]",
+   "addr": "07c2aa",
+   "size_bytes": 134,
+   "source_rows": [
+    "　此より南西の“霜ヶ峰”にある",
+    "",
+    "　王室直轄製氷洞内に、魔物が　",
+    "",
+    "　現れたのじゃ！一刻も早く退治",
+    "",
+    "　してもらいたい！頼んだぞ‼　"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 15,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "여기서 남서쪽 “서리봉”의",
+    "왕실 직할 제빙 동굴에",
+    "마물이 나타났네! 한시라도",
+    "서둘러 퇴치해 주게‼"
+   ],
+   "status": "approved",
+   "notes": "霜ヶ峰→서리봉(의역). 頼んだぞ 생략(폭 제한)"
+  },
+  {
+   "id": "A:07c330",
+   "label": "briefing[2]",
+   "addr": "07c330",
+   "size_bytes": 134,
+   "source_rows": [
+    "　我が娘“エミリア”が、無断で",
+    "",
+    "　タラス市に向ったらしい。　　",
+    "",
+    "　あの峠には魔物が出るのじゃ。",
+    "",
+    "　姫を連れ戻すのだ！頼んだぞ‼"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 15,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "내 딸 “에밀리아”가 몰래",
+    "타라스 시로 떠났다 하네.",
+    "그 고개엔 마물이 나오네.",
+    "공주를 데려와 주게‼"
+   ],
+   "status": "approved",
+   "notes": "頼んだぞ 는 ‼ 로 흡수"
+  },
+  {
+   "id": "A:07c4c2",
+   "label": "briefing[3]",
+   "addr": "07c4c2",
+   "size_bytes": 2,
+   "source_rows": [
+    ""
+   ],
+   "layout": {
+    "rows": 1,
+    "max_cells": 0,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": []
+   },
+   "ko_rows": [],
+   "status": "untranslated",
+   "notes": ""
+  },
+  {
+   "id": "A:07c3b6",
+   "label": "briefing[5]",
+   "addr": "07c3b6",
+   "size_bytes": 134,
+   "source_rows": [
+    "　誘拐された姫を取り戻す為に　",
+    "",
+    "　デロス火山洞内にあるという　",
+    "",
+    "　“神の硬玉”と“聖なる宝冠”",
+    "",
+    "　を持ち帰るのじゃ‼頼んだぞ‼"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 15,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "납치된 공주를 되찾으려면",
+    "데로스 화산 동굴에 있다는",
+    "“신의 경옥”과",
+    "성스런 보관을 가져오게‼"
+   ],
+   "status": "approved",
+   "notes": "神の硬玉/聖なる宝冠 — 아이템명 표기 사람 확인. 둘째 따옴표는 폭 때문에 생략"
+  },
+  {
+   "id": "A:07c43c",
+   "label": "briefing[7]",
+   "addr": "07c43c",
+   "size_bytes": 134,
+   "source_rows": [
+    "　今度こそ、姫と奪われた神器を",
+    "",
+    "　魔物共から取り戻し、その力で",
+    "",
+    "　魔物を再び“魔界の扉”の中に",
+    "",
+    "　封じ込めるのじゃ‼頼んだぞ‼"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 15,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "이번에야말로 공주와 빼앗긴",
+    "신기를 마물들에게서 되찾고",
+    "그 힘으로 마물들을 다시",
+    "“마계의 문”에 봉인하게‼"
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "A:07c66e",
+   "label": "king_message[0]",
+   "addr": "07c66e",
+   "size_bytes": 2,
+   "source_rows": [
+    ""
+   ],
+   "layout": {
+    "rows": 1,
+    "max_cells": 0,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": []
+   },
+   "ko_rows": [],
+   "status": "untranslated",
+   "notes": ""
+  },
+  {
+   "id": "A:07c4e4",
+   "label": "king_message[1]",
+   "addr": "07c4e4",
+   "size_bytes": 126,
+   "source_rows": [
+    "　貴公等の働き、真に見事であっ",
+    "",
+    "　た、褒美を取らそうぞ‼‥‥。",
+    "",
+    "　ほんとうに良くやってくれた。",
+    "",
+    "　次も期待しておるぞ‼"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 15,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "그대들의 활약, 참으로",
+    "훌륭했네. 상을 내리지‼",
+    "정말 잘해 주었네.",
+    "다음에도 기대하겠네‼"
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "A:07c562",
+   "label": "king_message[5]",
+   "addr": "07c562",
+   "size_bytes": 134,
+   "source_rows": [
+    "　なんということだ！　姫を誘拐",
+    "",
+    "　されてしまうとは！だが仮にも",
+    "",
+    "　王女、そう簡単に殺すとは思え",
+    "",
+    "　ないのじゃが‥‥。心配じゃ。"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 15,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "이럴 수가! 공주가",
+    "납치당하다니! 하나 명색이",
+    "왕녀, 쉽게 죽이진 않을",
+    "테지만‥‥. 걱정이구나."
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "A:07c5e8",
+   "label": "king_message[7]",
+   "addr": "07c5e8",
+   "size_bytes": 134,
+   "source_rows": [
+    "　二神器の内、一つを奪われたと",
+    "",
+    "　申すか！このままでは、世界が",
+    "",
+    "　魔物共のものになってしまう。",
+    "",
+    "　あとは貴公等だけが頼りじゃ‼"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 15,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "두 신기 중 하나를",
+    "빼앗겼다고? 이대로는",
+    "세계가 마물들의 것이 되고",
+    "만다. 믿을 건 그대들뿐‼"
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "A:07c68c",
+   "label": "villain[0]",
+   "addr": "07c68c",
+   "size_bytes": 118,
+   "source_rows": [
+    "　きさまらの魔法は、我が魔力に",
+    "",
+    "　よって封じ込めた。",
+    "",
+    "　これで魔法は使えんぞ‥‼",
+    "",
+    "　闇の力をおもい知るがよい‼"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 15,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "네놈들 마법은 내 마력으로",
+    "봉인했다. 이제 마법은",
+    "쓸 수 없다‥‼",
+    "어둠의 힘을 맛보아라‼"
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "A:07c702",
+   "label": "villain[1]",
+   "addr": "07c702",
+   "size_bytes": 128,
+   "source_rows": [
+    "　貴様等なぜ私の邪魔をするのだ！",
+    "",
+    "　だがそれもここまでだ‼",
+    "",
+    "　我が僕“ゼラー”の餌になるが",
+    "",
+    "　いいわ‼　ハッハハハハ‥。"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 16,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "어찌 날 방해하는 것이냐!",
+    "하나 그것도 여기까지다‼",
+    "내 종 “젤라”의 먹이가",
+    "되어라‼ 핫하하하하‥."
+   ],
+   "status": "approved",
+   "notes": "ゼラー 표기(젤라/제라) 사람 확인"
+  },
+  {
+   "id": "A:07c782",
+   "label": "villain[2]",
+   "addr": "07c782",
+   "size_bytes": 132,
+   "source_rows": [
+    "　やはり来たか‥！だがこれで、",
+    "",
+    "　王女を含め五人の生け贄全てが",
+    "",
+    "　揃った。残るは二神器のみ！",
+    "",
+    "　貴様等はここで死んでもらう‼"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 15,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "역시 왔군‥! 이것으로",
+    "왕녀를 포함한 다섯 제물이",
+    "모두 모였다. 남은 건 두",
+    "신기뿐! 여기서 죽어라‼"
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "A:07c806",
+   "label": "villain[3]",
+   "addr": "07c806",
+   "size_bytes": 130,
+   "source_rows": [
+    "　おのれ！まだ邪魔だてするのか！",
+    "",
+    "　此にある二神器は私がもらうぞ‼",
+    "",
+    "　ゆけい“ファイレス”‼奴等を",
+    "",
+    "　消し炭にしてしまえ‼"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 16,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "이놈! 아직도 방해하는가!",
+    "두 신기는 내가 가져가마‼",
+    "가라 “파이레스”‼ 놈들을",
+    "숯덩이로 만들어 버려라‼"
+   ],
+   "status": "approved",
+   "notes": "ファイレス 표기 사람 확인"
+  },
+  {
+   "id": "A:07c888",
+   "label": "villain[4]",
+   "addr": "07c888",
+   "size_bytes": 122,
+   "source_rows": [
+    "　ついに此まで来おったか‼だが",
+    "",
+    "　私の計画、扉の奥に封じられし",
+    "",
+    "　闇の帝王“ルシファー”様復活",
+    "",
+    "　の邪魔はさせぬ‼"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 15,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "기어이 여기까지 왔느냐‼",
+    "허나 문 너머 봉인된",
+    "어둠의 제왕 “루시퍼”님의",
+    "부활은 막지 못한다‼"
+   ],
+   "status": "approved",
+   "notes": "私の計画 생략(폭 제한)"
+  },
+  {
+   "id": "A:07c902",
+   "label": "villain[5]",
+   "addr": "07c902",
+   "size_bytes": 136,
+   "source_rows": [
+    "　前の“ゴーダ”はほんの座興よ！",
+    "",
+    "　今度は私が相手だ‼その二神器",
+    "",
+    "　は、扉の奥“アビス”の底深く",
+    "",
+    "　沈め、二度と使えないように、"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 16,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "“고다”는 여흥일 뿐이다!",
+    "이번엔 내가 상대다‼ 그",
+    "두 신기는 문 너머",
+    "“어비스” 깊이 묻어"
+   ],
+   "status": "approved",
+   "notes": "다음 화면(07c98a)으로 문장이 이어짐"
+  },
+  {
+   "id": "A:07c98a",
+   "label": "villain[6]",
+   "addr": "07c98a",
+   "size_bytes": 130,
+   "source_rows": [
+    "　してやる‼　　その時こそ",
+    "",
+    "“ルシファー”様の支配なさる、",
+    "",
+    "“闇の世紀”が始まるのだ！さあ",
+    "",
+    "　貴様等も生け贄になるがいい‼"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 15,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "다시는 못 쓰게 해주마‼",
+    "그때야말로 “루시퍼”님이",
+    "다스리는 “어둠의 세기”가",
+    "열린다! 너희도 제물이다‼"
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "A:07ca0c",
+   "label": "ending",
+   "addr": "07ca0c",
+   "size_bytes": 116,
+   "source_rows": [
+    "　かくして四人の勇者は、伝承の",
+    "",
+    "　とおり魔物を再び封印し、王国",
+    "",
+    "　に再び、平和をもたらしたので",
+    "",
+    "　ある‥‥。"
+   ],
+   "layout": {
+    "rows": 7,
+    "max_cells": 15,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [
+    "이리하여 네 용사는",
+    "전승대로 마물을 다시",
+    "봉인하고, 왕국에 다시",
+    "평화를 가져온 것이다‥‥."
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "A:07caac",
+   "label": "staff_roll[0]",
+   "addr": "07caac",
+   "size_bytes": 26,
+   "source_rows": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "STAFF"
+   ],
+   "layout": {
+    "rows": 8,
+    "max_cells": 5,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [],
+   "status": "untranslated",
+   "notes": ""
+  },
+  {
+   "id": "A:07cac6",
+   "label": "staff_roll[1]",
+   "addr": "07cac6",
+   "size_bytes": 64,
+   "source_rows": [
+    "原作",
+    "",
+    "脚本",
+    "",
+    "監督",
+    "",
+    "演出",
+    "",
+    "",
+    "　漆原義之",
+    "",
+    "",
+    "",
+    "",
+    "製作管理"
+   ],
+   "layout": {
+    "rows": 15,
+    "max_cells": 5,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [],
+   "status": "untranslated",
+   "notes": ""
+  },
+  {
+   "id": "A:07cb06",
+   "label": "staff_roll[2]",
+   "addr": "07cb06",
+   "size_bytes": 62,
+   "source_rows": [
+    "",
+    "　明太子　",
+    "",
+    "",
+    "",
+    "",
+    "編集",
+    "",
+    "",
+    "　諏佐直己",
+    "",
+    "",
+    "",
+    "",
+    "演技指導"
+   ],
+   "layout": {
+    "rows": 15,
+    "max_cells": 5,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [],
+   "status": "untranslated",
+   "notes": ""
+  },
+  {
+   "id": "A:07cb44",
+   "label": "staff_roll[3]",
+   "addr": "07cb44",
+   "size_bytes": 58,
+   "source_rows": [
+    "",
+    "　野田伸二",
+    "",
+    "　石引良行",
+    "",
+    "",
+    "",
+    "",
+    "美術",
+    "",
+    "",
+    "　松田　淳"
+   ],
+   "layout": {
+    "rows": 12,
+    "max_cells": 5,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [],
+   "status": "untranslated",
+   "notes": ""
+  },
+  {
+   "id": "A:07cb7e",
+   "label": "staff_roll[4]",
+   "addr": "07cb7e",
+   "size_bytes": 80,
+   "source_rows": [
+    "撮影",
+    "",
+    "",
+    "　芳賀卓也",
+    "",
+    "　宮沢健一",
+    "",
+    "",
+    "",
+    "",
+    "擬斗",
+    "",
+    "",
+    "　栗原映子",
+    "",
+    "　長尾園美"
+   ],
+   "layout": {
+    "rows": 16,
+    "max_cells": 5,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [],
+   "status": "untranslated",
+   "notes": ""
+  },
+  {
+   "id": "A:07cbce",
+   "label": "staff_roll[5]",
+   "addr": "07cbce",
+   "size_bytes": 80,
+   "source_rows": [
+    "",
+    "　藤原仁美",
+    "",
+    "　北原智江",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "美術助手",
+    "",
+    "",
+    "　野老雅典",
+    "",
+    "　大江真徳"
+   ],
+   "layout": {
+    "rows": 16,
+    "max_cells": 5,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [],
+   "status": "untranslated",
+   "notes": ""
+  },
+  {
+   "id": "A:07cc1e",
+   "label": "staff_roll[6]",
+   "addr": "07cc1e",
+   "size_bytes": 74,
+   "source_rows": [
+    "",
+    "　皆川一巳",
+    "",
+    "　橋本和典",
+    "",
+    "　井下正之",
+    "",
+    "　海宝吉成",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "音楽"
+   ],
+   "layout": {
+    "rows": 15,
+    "max_cells": 5,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [],
+   "status": "untranslated",
+   "notes": ""
+  },
+  {
+   "id": "A:07cc68",
+   "label": "staff_roll[7]",
+   "addr": "07cc68",
+   "size_bytes": 76,
+   "source_rows": [
+    "",
+    "　吉田博昭",
+    "",
+    "　木内達也",
+    "",
+    "　森　憲治",
+    "",
+    "",
+    "",
+    "",
+    "音響効果",
+    "",
+    "",
+    "　原あづさ"
+   ],
+   "layout": {
+    "rows": 14,
+    "max_cells": 5,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [],
+   "status": "untranslated",
+   "notes": ""
+  },
+  {
+   "id": "A:07ccb4",
+   "label": "staff_roll[8]",
+   "addr": "07ccb4",
+   "size_bytes": 70,
+   "source_rows": [
+    "",
+    "",
+    "",
+    "技術",
+    "",
+    "",
+    "　三井伸悟",
+    "",
+    "",
+    "",
+    "協力",
+    "",
+    "",
+    "　倉田和幸",
+    "",
+    "　秋林浩司"
+   ],
+   "layout": {
+    "rows": 16,
+    "max_cells": 5,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [],
+   "status": "untranslated",
+   "notes": ""
+  },
+  {
+   "id": "A:07ccfa",
+   "label": "staff_roll[9]",
+   "addr": "07ccfa",
+   "size_bytes": 94,
+   "source_rows": [
+    "",
+    "　本田善明",
+    "",
+    "　野村泰彦",
+    "",
+    "　鈴木進一",
+    "",
+    "　石川雅生",
+    "",
+    "　岩部浩之",
+    "",
+    "",
+    "",
+    "",
+    "　　：",
+    "　　："
+   ],
+   "layout": {
+    "rows": 16,
+    "max_cells": 5,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [],
+   "status": "untranslated",
+   "notes": ""
+  },
+  {
+   "id": "A:07cd58",
+   "label": "staff_roll[10]",
+   "addr": "07cd58",
+   "size_bytes": 54,
+   "source_rows": [
+    "",
+    "",
+    "製作",
+    "",
+    "",
+    "",
+    "",
+    "データイースト、？",
+    "　　株式会社",
+    "　　▣"
+   ],
+   "layout": {
+    "rows": 10,
+    "max_cells": 6,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ]
+   },
+   "ko_rows": [],
+   "status": "untranslated",
+   "notes": ""
+  },
+  {
+   "id": "A:07e03e",
+   "label": "rank_names",
+   "addr": "07e03e",
+   "size_bytes": 146,
+   "source_rows": [
+    "　Squire　Cavalier　Lord　　　　Baron　　Viscount　Count　　　Marquis　Duke　　　　King　　　"
+   ],
+   "layout": {
+    "rows": 1,
+    "max_cells": 72,
+    "lead_blank": 1,
+    "vertical_original": false,
+    "palettes": [
+     9
+    ]
+   },
+   "ko_rows": [
+    "종자",
+    "기병",
+    "영주",
+    "남작",
+    "자작",
+    "백작",
+    "후작",
+    "공작",
+    "왕"
+   ],
+   "status": "approved",
+   "notes": "Squire/Cavalier/Lord/Baron/Viscount/Count/Marquis/Duke/King. 원문 8셀 필드×9, 이름 뒤 0 패딩"
+  },
+  {
+   "id": "S:07debe",
+   "label": "class_name[0]",
+   "addr": "07debe",
+   "size_bytes": 48,
+   "source_rows": [
+    "騎士"
+   ],
+   "ascii_row": "Knight",
+   "layout": {
+    "rows": 1,
+    "max_cells": 4,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     6
+    ],
+    "note": "8셀 폭 띠, 글리프 ≤4, 가운데 정렬"
+   },
+   "ko_rows": [
+    "기사"
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "S:07deee",
+   "label": "class_name[1]",
+   "addr": "07deee",
+   "size_bytes": 48,
+   "source_rows": [
+    "魔法使い"
+   ],
+   "ascii_row": "Wizard",
+   "layout": {
+    "rows": 1,
+    "max_cells": 4,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     6
+    ],
+    "note": "8셀 폭 띠, 글리프 ≤4, 가운데 정렬"
+   },
+   "ko_rows": [
+    "마법사"
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "S:07df1e",
+   "label": "class_name[2]",
+   "addr": "07df1e",
+   "size_bytes": 48,
+   "source_rows": [
+    "吟遊詩人"
+   ],
+   "ascii_row": "Bard",
+   "layout": {
+    "rows": 1,
+    "max_cells": 4,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     6
+    ],
+    "note": "8셀 폭 띠, 글리프 ≤4, 가운데 정렬"
+   },
+   "ko_rows": [
+    "음유시인"
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "S:07df4e",
+   "label": "class_name[3]",
+   "addr": "07df4e",
+   "size_bytes": 48,
+   "source_rows": [
+    "忍者"
+   ],
+   "ascii_row": "Ninja",
+   "layout": {
+    "rows": 1,
+    "max_cells": 4,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     6
+    ],
+    "note": "8셀 폭 띠, 글리프 ≤4, 가운데 정렬"
+   },
+   "ko_rows": [
+    "닌자"
+   ],
+   "status": "approved",
+   "notes": ""
+  },
+  {
+   "id": "S:07df7e",
+   "label": "class_stat[0]",
+   "addr": "07df7e",
+   "size_bytes": 48,
+   "source_rows": [
+    "破壊力大"
+   ],
+   "ascii_row": "",
+   "layout": {
+    "rows": 1,
+    "max_cells": 4,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ],
+    "note": "8셀 폭 띠, 글리프 ≤4, 가운데 정렬"
+   },
+   "ko_rows": [
+    "파괴력대"
+   ],
+   "status": "approved",
+   "notes": "破壊力大"
+  },
+  {
+   "id": "S:07dfae",
+   "label": "class_stat[1]",
+   "addr": "07dfae",
+   "size_bytes": 48,
+   "source_rows": [
+    "魔法強力"
+   ],
+   "ascii_row": "",
+   "layout": {
+    "rows": 1,
+    "max_cells": 4,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     6
+    ],
+    "note": "8셀 폭 띠, 글리프 ≤4, 가운데 정렬"
+   },
+   "ko_rows": [
+    "마법강력"
+   ],
+   "status": "approved",
+   "notes": "魔法強力"
+  },
+  {
+   "id": "S:07dfde",
+   "label": "class_stat[2]",
+   "addr": "07dfde",
+   "size_bytes": 48,
+   "source_rows": [
+    "毒に耐性"
+   ],
+   "ascii_row": "",
+   "layout": {
+    "rows": 1,
+    "max_cells": 4,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     0
+    ],
+    "note": "8셀 폭 띠, 글리프 ≤4, 가운데 정렬"
+   },
+   "ko_rows": [
+    "독내성"
+   ],
+   "status": "approved",
+   "notes": "毒に耐性"
+  },
+  {
+   "id": "S:07e00e",
+   "label": "class_stat[3]",
+   "addr": "07e00e",
+   "size_bytes": 48,
+   "source_rows": [
+    "高速移動"
+   ],
+   "ascii_row": "",
+   "layout": {
+    "rows": 1,
+    "max_cells": 4,
+    "lead_blank": 0,
+    "vertical_original": false,
+    "palettes": [
+     6
+    ],
+    "note": "8셀 폭 띠, 글리프 ≤4, 가운데 정렬"
+   },
+   "ko_rows": [
+    "고속이동"
+   ],
+   "status": "approved",
+   "notes": "高速移動"
+  }
+ ]
+}

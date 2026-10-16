@@ -1,0 +1,307 @@
+{
+ "set": "darksealj",
+ "name": "Korean",
+ "version": "1.0",
+ "date": "20261004",
+ "roms": {
+  "fz_04-4.j12": {
+   "changed_bytes": 30,
+   "ips": "Korean-fz_04-4_j12.ips",
+   "crc": "817faa2c"
+  },
+  "fz_01-4.h14": {
+   "changed_bytes": 32,
+   "ips": "Korean-fz_01-4_h14.ips",
+   "crc": "373caeee"
+  },
+  "fz_00-2.h12": {
+   "changed_bytes": 1997,
+   "ips": "Korean-fz_00-2_h12.ips",
+   "crc": "1ab99aa7"
+  },
+  "fz_05-2.j14": {
+   "changed_bytes": 2201,
+   "ips": "Korean-fz_05-2_j14.ips",
+   "crc": "3374ef8c"
+  },
+  "fz_02.j1": {
+   "changed_bytes": 11558,
+   "ips": "Korean-fz_02_j1.ips",
+   "crc": "3c9c3012"
+  },
+  "fz_03.j2": {
+   "changed_bytes": 15362,
+   "ips": "Korean-fz_03_j2.ips",
+   "crc": "264b90ed"
+  }
+ },
+ "scripts": [
+  {
+   "id": "A:07ba18",
+   "label": "prologue",
+   "bytes": 338,
+   "new_addr": "07ba18",
+   "lines": 14
+  },
+  {
+   "id": "A:07bc62",
+   "label": "title_line",
+   "bytes": 40,
+   "new_addr": "07bc62",
+   "lines": 2
+  },
+  {
+   "id": "A:07bf10",
+   "label": "story[0]",
+   "bytes": 120,
+   "new_addr": "07bf10",
+   "lines": 4
+  },
+  {
+   "id": "A:07bf8e",
+   "label": "story[1]",
+   "bytes": 92,
+   "new_addr": "07bf88",
+   "lines": 3
+  },
+  {
+   "id": "A:07bfe8",
+   "label": "story[2]",
+   "bytes": 100,
+   "new_addr": "07bfe4",
+   "lines": 4
+  },
+  {
+   "id": "A:07c044",
+   "label": "story[3]",
+   "bytes": 68,
+   "new_addr": "07c048",
+   "lines": 3
+  },
+  {
+   "id": "A:07c224",
+   "label": "briefing[0]",
+   "bytes": 120,
+   "new_addr": "07c224",
+   "lines": 4
+  },
+  {
+   "id": "A:07c2aa",
+   "label": "briefing[1]",
+   "bytes": 120,
+   "new_addr": "07c29c",
+   "lines": 4
+  },
+  {
+   "id": "A:07c330",
+   "label": "briefing[2]",
+   "bytes": 124,
+   "new_addr": "07c314",
+   "lines": 4
+  },
+  {
+   "id": "A:07c3b6",
+   "label": "briefing[5]",
+   "bytes": 114,
+   "new_addr": "07c390",
+   "lines": 4
+  },
+  {
+   "id": "A:07c43c",
+   "label": "briefing[7]",
+   "bytes": 128,
+   "new_addr": "07c402",
+   "lines": 4
+  },
+  {
+   "id": "A:07c4e4",
+   "label": "king_message[1]",
+   "bytes": 110,
+   "new_addr": "07c4e4",
+   "lines": 4
+  },
+  {
+   "id": "A:07c562",
+   "label": "king_message[5]",
+   "bytes": 118,
+   "new_addr": "07c552",
+   "lines": 4
+  },
+  {
+   "id": "A:07c5e8",
+   "label": "king_message[7]",
+   "bytes": 116,
+   "new_addr": "07c5c8",
+   "lines": 4
+  },
+  {
+   "id": "A:07c68c",
+   "label": "villain[0]",
+   "bytes": 110,
+   "new_addr": "07c68c",
+   "lines": 4
+  },
+  {
+   "id": "A:07c702",
+   "label": "villain[1]",
+   "bytes": 122,
+   "new_addr": "07c6fa",
+   "lines": 4
+  },
+  {
+   "id": "A:07c782",
+   "label": "villain[2]",
+   "bytes": 124,
+   "new_addr": "07c774",
+   "lines": 4
+  },
+  {
+   "id": "A:07c806",
+   "label": "villain[3]",
+   "bytes": 128,
+   "new_addr": "07c7f0",
+   "lines": 4
+  },
+  {
+   "id": "A:07c888",
+   "label": "villain[4]",
+   "bytes": 116,
+   "new_addr": "07c870",
+   "lines": 4
+  },
+  {
+   "id": "A:07c902",
+   "label": "villain[5]",
+   "bytes": 114,
+   "new_addr": "07c8e4",
+   "lines": 4
+  },
+  {
+   "id": "A:07c98a",
+   "label": "villain[6]",
+   "bytes": 118,
+   "new_addr": "07c956",
+   "lines": 4
+  },
+  {
+   "id": "A:07ca0c",
+   "label": "ending",
+   "bytes": 112,
+   "new_addr": "07ca0c",
+   "lines": 4
+  },
+  {
+   "id": "S:07debe",
+   "label": "class_name[0]",
+   "bytes": 48,
+   "new_addr": "07debe",
+   "lines": 1
+  },
+  {
+   "id": "S:07deee",
+   "label": "class_name[1]",
+   "bytes": 48,
+   "new_addr": "07deee",
+   "lines": 1
+  },
+  {
+   "id": "S:07df1e",
+   "label": "class_name[2]",
+   "bytes": 48,
+   "new_addr": "07df1e",
+   "lines": 1
+  },
+  {
+   "id": "S:07df4e",
+   "label": "class_name[3]",
+   "bytes": 48,
+   "new_addr": "07df4e",
+   "lines": 1
+  },
+  {
+   "id": "S:07df7e",
+   "label": "class_stat[0]",
+   "bytes": 48,
+   "new_addr": "07df7e",
+   "lines": 1
+  },
+  {
+   "id": "S:07dfae",
+   "label": "class_stat[1]",
+   "bytes": 48,
+   "new_addr": "07dfae",
+   "lines": 1
+  },
+  {
+   "id": "S:07dfde",
+   "label": "class_stat[2]",
+   "bytes": 48,
+   "new_addr": "07dfde",
+   "lines": 1
+  },
+  {
+   "id": "S:07e00e",
+   "label": "class_stat[3]",
+   "bytes": 48,
+   "new_addr": "07e00e",
+   "lines": 1
+  },
+  {
+   "id": "A:07e03e",
+   "label": "rank_names",
+   "bytes": 146,
+   "new_addr": "07e03e",
+   "lines": 9
+  },
+  {
+   "id": "C:07bc8a",
+   "label": "profile_labels",
+   "bytes": 124,
+   "new_addr": "freespace",
+   "lines": 12
+  },
+  {
+   "id": "C:07bd10",
+   "label": "profile_values[0]",
+   "bytes": 130,
+   "new_addr": "freespace",
+   "lines": 12
+  },
+  {
+   "id": "C:07bd8e",
+   "label": "profile_values[1]",
+   "bytes": 142,
+   "new_addr": "freespace",
+   "lines": 12
+  },
+  {
+   "id": "C:07be14",
+   "label": "profile_values[2]",
+   "bytes": 136,
+   "new_addr": "freespace",
+   "lines": 12
+  },
+  {
+   "id": "C:07be8c",
+   "label": "profile_values[3]",
+   "bytes": 120,
+   "new_addr": "freespace",
+   "lines": 12
+  }
+ ],
+ "untranslated": [
+  "briefing[3]",
+  "king_message[0]",
+  "staff_roll[0]",
+  "staff_roll[1]",
+  "staff_roll[2]",
+  "staff_roll[3]",
+  "staff_roll[4]",
+  "staff_roll[5]",
+  "staff_roll[6]",
+  "staff_roll[7]",
+  "staff_roll[8]",
+  "staff_roll[9]",
+  "staff_roll[10]"
+ ]
+}

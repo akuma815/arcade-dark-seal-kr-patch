@@ -1,0 +1,4 @@
+{
+ "_note": "하이스코어 화면 계급명 9개. 8셀 고정 필드(8×8 한글 타일, 팔레트 9). 초벌.",
+ "A:07e03e": {"ko_rows": ["종자", "기병", "영주", "남작", "자작", "백작", "후작", "공작", "왕"], "notes": "Squire/Cavalier/Lord/Baron/Viscount/Count/Marquis/Duke/King. 원문 8셀 필드×9, 이름 뒤 0 패딩"}
+}

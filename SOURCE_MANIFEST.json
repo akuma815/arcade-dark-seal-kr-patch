@@ -1,0 +1,186 @@
+{
+  "date": "2026-10-16",
+  "project": "다크 실",
+  "files": [
+    {
+      "path": "common/config/deco74_tables.json",
+      "source": "common/config/deco74_tables.json",
+      "bytes": 25049,
+      "sha256": "86d64770b0d389d7a5c57baea63f30ed186beeeeef21750c435078a4a4506cca"
+    },
+    {
+      "path": "common/glossary/glossary.md",
+      "source": "common/glossary/glossary.md",
+      "bytes": 487,
+      "sha256": "3a56ea237bba4c206b0538ed2410a6fe7c2ebe2ee8a3492ee2446588867b7a96"
+    },
+    {
+      "path": "common/scripts/deco74.py",
+      "source": "common/scripts/deco74.py",
+      "bytes": 7392,
+      "sha256": "08a9373696bb8deb2f206c224d47c0aa4b1774d77efd579ff1cf9b40fbf28cbc"
+    },
+    {
+      "path": "common/scripts/extract_sets.py",
+      "source": "common/scripts/extract_sets.py",
+      "bytes": 3546,
+      "sha256": "6c84f379a5471dcdc996c8092dba189f11061c3ed1832d7f507f591943ef4c9b"
+    },
+    {
+      "path": "common/scripts/fbneo_attach.py",
+      "source": "common/scripts/fbneo_attach.py",
+      "bytes": 2544,
+      "sha256": "19875a38a11f43797100da280caaea6202e0db3c9a393d9ff71a20e6ab5fda6f"
+    },
+    {
+      "path": "common/scripts/fbneo_dump.py",
+      "source": "common/scripts/fbneo_dump.py",
+      "bytes": 5504,
+      "sha256": "3ac2f558b3610e9a20c168393f6dce702924462cc982506ccd11bd3c075f5f54"
+    },
+    {
+      "path": "common/scripts/fbneo_lua.py",
+      "source": "common/scripts/fbneo_lua.py",
+      "bytes": 8193,
+      "sha256": "3d86bb10fe764305e532995168f83909cac81dcdd64eb9daef4914e2bfe83919"
+    },
+    {
+      "path": "common/scripts/fbneo_play.py",
+      "source": "common/scripts/fbneo_play.py",
+      "bytes": 1701,
+      "sha256": "da7ad95b7a8ca985677ad8d3690dba1e0a1755fa26920aa65388e04a6a46da26"
+    },
+    {
+      "path": "common/scripts/fbneo_run_lua.py",
+      "source": "common/scripts/fbneo_run_lua.py",
+      "bytes": 1193,
+      "sha256": "e7512899d832540b4c3691111a24195657583fb3ebc2a10f4d1088f000558012"
+    },
+    {
+      "path": "common/scripts/make_dist.py",
+      "source": "common/scripts/make_dist.py",
+      "bytes": 4526,
+      "sha256": "151d8acfd526d699d4291c6177c5d792627f8e2a35e74f0c6dd06b1d494ce272"
+    },
+    {
+      "path": "common/scripts/patchutil.py",
+      "source": "common/scripts/patchutil.py",
+      "bytes": 2569,
+      "sha256": "ab5c13562900515bce244e63b7b87b25cfd6d9029aafe4119d1bc32ce100b769"
+    },
+    {
+      "path": "common/scripts/render_chars.py",
+      "source": "common/scripts/render_chars.py",
+      "bytes": 3917,
+      "sha256": "26d8bcd6927c033839e9aa20a1af66128226d6638a73e1f1d6759bef60781f70"
+    },
+    {
+      "path": "darksealj/workspace/font/mapping/ds1_glyph_map.json",
+      "source": "darksealj/workspace/font/mapping/ds1_glyph_map.json",
+      "bytes": 5988,
+      "sha256": "c16e919dc81e07e78256737748be44b5b1db6605ce8e01d4ff18514f180805ee"
+    },
+    {
+      "path": "darksealj/workspace/scripts/apply_drafts.py",
+      "source": "darksealj/workspace/scripts/apply_drafts.py",
+      "bytes": 3700,
+      "sha256": "9fedb687ca5627e581115ab37da75da05319a8f048af1a8500204e2dd30ac1fe"
+    },
+    {
+      "path": "darksealj/workspace/scripts/build_poc.py",
+      "source": "darksealj/workspace/scripts/build_poc.py",
+      "bytes": 10775,
+      "sha256": "4c691aa332b6f91b9dafb8899704a773b1eea100bfc057a47462fdf95bacfffd"
+    },
+    {
+      "path": "darksealj/workspace/scripts/build_translation.py",
+      "source": "darksealj/workspace/scripts/build_translation.py",
+      "bytes": 20113,
+      "sha256": "f5caca333dd871159f638aa916d6dda783e86638edfbca16831aaac8eecc2658"
+    },
+    {
+      "path": "darksealj/workspace/scripts/ds1lib.py",
+      "source": "darksealj/workspace/scripts/ds1lib.py",
+      "bytes": 13652,
+      "sha256": "6164146deb3ee0d99a8d5ca5f39c76f90a93e70de38f959df9dc1a1095999b09"
+    },
+    {
+      "path": "darksealj/workspace/scripts/extract_text.py",
+      "source": "darksealj/workspace/scripts/extract_text.py",
+      "bytes": 5830,
+      "sha256": "32ab73a3b5a791d6b13cd45a2626dcaed3007af96c78174074ce85d448422de5"
+    },
+    {
+      "path": "darksealj/workspace/scripts/glyph_map.py",
+      "source": "darksealj/workspace/scripts/glyph_map.py",
+      "bytes": 7925,
+      "sha256": "d7ac26f77a3d8285fed6bf26ca09a435524700f6011151032935f15d63cd18da"
+    },
+    {
+      "path": "darksealj/workspace/scripts/make_ledger.py",
+      "source": "darksealj/workspace/scripts/make_ledger.py",
+      "bytes": 5792,
+      "sha256": "fd1d1e84b1d0785c1a70e6d6c6cb13d27a28ab75c8f7742a8284135a1c080653"
+    },
+    {
+      "path": "darksealj/workspace/tests/cheat_qa.lua",
+      "source": "darksealj/workspace/tests/cheat_qa.lua",
+      "bytes": 587,
+      "sha256": "5f243b78f65210a9cec4274d39b8b918ff8cdd9e2ee050f43150237c75a31436"
+    },
+    {
+      "path": "darksealj/workspace/text/translation/drafts_v1.json",
+      "source": "darksealj/workspace/text/translation/drafts_v1.json",
+      "bytes": 4874,
+      "sha256": "0d97890aad3957367d34ba8cbfb10e0126ba92e439f09158364184e5a590f721"
+    },
+    {
+      "path": "darksealj/workspace/text/translation/drafts_v2_strips.json",
+      "source": "darksealj/workspace/text/translation/drafts_v2_strips.json",
+      "bytes": 513,
+      "sha256": "636cb18b80fcc87cb0f00ab7a0ce06033cfc28622203543d9f3869e97b2b7814"
+    },
+    {
+      "path": "darksealj/workspace/text/translation/drafts_v3_profile.json",
+      "source": "darksealj/workspace/text/translation/drafts_v3_profile.json",
+      "bytes": 2693,
+      "sha256": "1598a6ba73b906b2c0fd67aaf4a60fa0410c21926f11276a9c4518b117f65888"
+    },
+    {
+      "path": "darksealj/workspace/text/translation/drafts_v4_ranks.json",
+      "source": "darksealj/workspace/text/translation/drafts_v4_ranks.json",
+      "bytes": 347,
+      "sha256": "34108773704b7681177f2bd36873b07f180b745a6c1e90f3db2936e586991490"
+    },
+    {
+      "path": "darksealj/workspace/text/translation/ds1_translation.json",
+      "source": "darksealj/workspace/text/translation/ds1_translation.json",
+      "bytes": 41246,
+      "sha256": "0d760d5e8d54afe957e0ba361628b283d5483a51cced5caec0b1429d51bcc591"
+    },
+    {
+      "path": "darksealj/docs/build.md",
+      "source": "darksealj/docs/build.md",
+      "bytes": 4713,
+      "sha256": "7c47fd08eacd3b7e2ab70ba0dca20047ad9ed8b74aff0ba85c424dc0e20a70c3"
+    },
+    {
+      "path": "darksealj/docs/poc.md",
+      "source": "darksealj/docs/poc.md",
+      "bytes": 5092,
+      "sha256": "ba74cd28f0ffbc38b680ff93465bbd02cc0661d1b4e68fef22c2c6f975ff4e93"
+    },
+    {
+      "path": "darksealj/docs/survey.md",
+      "source": "darksealj/docs/survey.md",
+      "bytes": 7500,
+      "sha256": "d8237a1a1b5c131455e62a4cbb697d0e26342e4c50c0a0f5268c003c375d6904"
+    },
+    {
+      "path": "docs/PROJECT_NOTES.md",
+      "source": "README.md",
+      "bytes": 6545,
+      "sha256": "23e47e50a4821c65665b6f9e7976217c6315d28ac423160bada5b30fb97d41e4"
+    }
+  ]
+}
