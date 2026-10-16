@@ -1,0 +1,14 @@
+{
+  "src": "assets/screenshots/arcade-dark-seal-kr-patch.png",
+  "caption": "한글 프롤로그",
+  "kind": "runtime",
+  "width": 960,
+  "height": 752,
+  "source": "Games/Dark Seal/darksealj/work/dumps_kr_attract/screenshot.png",
+  "sourceSHA256": "a5314bf097e968b5c55c9cf731eb7135562a7b0d6762d3828ecc3d25aa0dd98b",
+  "assetSHA256": "a5314bf097e968b5c55c9cf731eb7135562a7b0d6762d3828ecc3d25aa0dd98b",
+  "pixelSHA256": "512433a7d4b0034c29bba55a23eff24b692e89a2fe088d42aa515dd92f599eb1",
+  "sourceNote": "dumps_kr_attract 게임 캡처",
+  "readmeAsset": "img/preview.png",
+  "displayNote": "dumps_kr_attract 게임 캡처"
+}
